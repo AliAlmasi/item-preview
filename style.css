@@ -1,22 +1,81 @@
-* {
-	font-family: "Merriweather";
+body {
+  border: 5px solid black;
+  color: var(--4th-color);
+  font-family: "Merriweather" !important;
+  line-height: 1.4;
+  background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23CFD8DC" 					fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
+
+  --1st-color: #ea3c3c;
+  --2nd-color: #34457c;
+  --3rd-color: #a1887f;
+  --4th-color: #263238;
+  --5th-color: #eceff1;
 }
 
-html {
-	background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23CFD8DC" 					fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
+h1 {
+  color: var(--5th-color);
+  padding: 2px;
+  background-color: #2632388f;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 img {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 *::-moz-selection {
-	/* Code for Firefox */
-	color: #a1887f;
-	background: #263238;
+  color: var(--3rd-color);
+  background: var(--4th-color);
 }
 
 *::selection {
-	color: #a1887f;
-	background: #263238;
+  color: var(--3rd-color);
+  background: var(--4th-color);
+}
+
+button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: inherit;
+  border: none;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.price {
+  color: var(--1st-color);
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: var(--4th-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--2nd-color);
+  color: var(--1st-color);
+}
+
+ul {
+  list-style: square;
 }

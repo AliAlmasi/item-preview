@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CodePen - Challenge #2</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- partial:index.partial.html -->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Challenge #2</title>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700"
-        />
-      </head>
 
-      <body>
-        <h1 style="color: #34457c">Converse Chuck Taylor All Star Low Top</h1>
-        <img src="item.jpg" alt="Converse Chuck Taylor All Star" width="300" />
-        <p><strong style="color: #ea3c3c">$64.89</strong></p>
-        <p>Free Shipping</p>
-        <p>
-          Ready to dress up or down, these classic canvas Chucks are an everyday
-          wardrobe staple.
-        </p>
-        <a href="http://about.me/alialmasi" target="_blank"
-          >More information -></a
-        >
-        <h2>Product details</h2>
-        <ul>
-          <li>Lightweight, durable canvas sneaker</li>
-          <li>Lightly padded footbed for added comfort</li>
-          <li>Iconic Chunk Taylor ankle patch</li>
-        </ul>
-        <form
-          action="https://codepen.io/jonasschmedtmann/pen/48f20ea036df9afc09978b07eca226b8"
-        >
-          <input
-            type="submit"
-            value="Add to cart +"
-            style="margin-left: 40px; font-size: 16px"
-          />
-        </form>
-      </body>
-    </html>
-    <!-- partial -->
-    <script src="./script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Challenge #2</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <script src="./script.js"></script>
+  <h1>Converse Chuck Taylor All Star Low Top</h1>
+  <img src="./item.jpg" alt="Converse Chuck Taylor All Star" width="300" />
+  <p><strong class="price">$64.89</strong></p>
+  <p class="shipping">Free Shipping</p>
+  <p>
+    Ready to dress up or down, these classic canvas Chucks are an everyday
+    wardrobe staple.
+  </p>
+  <a href="http://about.me/alialmasi" target="_blank">More information &raquo;</a>
+  <h2>Product details</h2>
+  <ul>
+    <li>Lightweight, durable canvas sneaker</li>
+    <li>Lightly padded footbed for added comfort</li>
+    <li>Iconic Chunk Taylor ankle patch</li>
+  </ul>
+  <button onclick="visitPage();">
+    Add to cart&nbsp;&nbsp;<i class="fa-solid fa-plus"></i>
+  </button>
+</body>
+
 </html>
