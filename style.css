@@ -1,36 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  margin: 25px auto;
+  border: 4px solid black;
+  position: relative;
+}
+
+.container::before {
+  content: "SALE";
+  letter-spacing: 2.4px;
+  font-size: 14px;
+  background-color: var(--1st-color);
+  color: #FFF;
+  padding: 5px;
+  top: -17px;
+  left: -34px;
+  position: absolute;
+}
+
 body {
-  border: 5px solid black;
   color: var(--4th-color);
-  font-family: "Merriweather" !important;
+  font-family: sans-serif;
   line-height: 1.4;
-  background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23CFD8DC" 					fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
+  /* background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23CFD8DC" 					fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E'); */
 
   --1st-color: #ea3c3c;
   --2nd-color: #34457c;
   --3rd-color: #a1887f;
   --4th-color: #263238;
   --5th-color: #eceff1;
+  cursor: default;
 }
 
 h1 {
   color: var(--5th-color);
-  padding: 2px;
-  background-color: #2632388f;
+  padding: 15px;
+  background-color: var(--3rd-color);
   text-transform: uppercase;
   text-align: center;
-}
-
-img {
-  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 *::-moz-selection {
-  color: var(--3rd-color);
+  color: var(--5th-color);
   background: var(--4th-color);
 }
 
 *::selection {
-  color: var(--3rd-color);
+  color: var(--5th-color);
   background: var(--4th-color);
 }
 
@@ -39,19 +60,32 @@ button {
   color: white;
   text-transform: uppercase;
   font-family: inherit;
+  width: 100%;
+  padding: 15px;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: white;
   color: black;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 4px solid black;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+/* detais title */
+h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .price {
   color: var(--1st-color);
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .shipping {
@@ -59,6 +93,7 @@ button:hover {
   color: #777;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 a:link,
@@ -78,4 +113,44 @@ a:active {
 
 ul {
   list-style: square;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.colors {
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.color {
+  background-color: #000;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #2f6ee2;
+}
+
+.red {
+  background-color: var(--1st-color);
+}
+
+.yellow {
+  background-color: #f0bf1b;
+}
+
+.green {
+  background-color: #90cc00;
+}
+
+.brown {
+  background-color: #885214;
 }
