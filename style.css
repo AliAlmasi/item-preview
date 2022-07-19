@@ -29,7 +29,7 @@ body {
   color: var(--4th-color);
   font-family: sans-serif;
   line-height: 1.4;
-  /* background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23CFD8DC" 					fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E'); */
+  background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23dcdcdc" 					fill-opacity="0.3" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
 
   --1st-color: #ea3c3c;
   --2nd-color: #34457c;
@@ -39,19 +39,19 @@ body {
   cursor: default;
 }
 
+*::selection {
+  color: var(--5th-color);
+  background: var(--4th-color);
+}
+
 h1 {
   color: var(--5th-color);
   padding: 15px;
   background-color: var(--3rd-color);
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: 3px;
-}
-
-*::selection {
-  color: var(--5th-color);
-  background: var(--4th-color);
 }
 
 button {
@@ -118,7 +118,7 @@ a:hover {
 
 a:active {
   background-color: var(--2nd-color);
-  color: var(--1st-color);
+  color: var(--5th-color);
 }
 
 ul {
@@ -138,7 +138,7 @@ li {
 }
 
 .color {
-  background-color: #000;
+  background-color: #26272c;
   height: 20px;
   width: 20px;
   display: inline-block;
