@@ -14,6 +14,7 @@
 }
 
 .container::before {
+  position: absolute;
   content: "SALE";
   letter-spacing: 2.4px;
   font-size: 14px;
@@ -22,7 +23,6 @@
   padding: 5px 15px;
   top: -17px;
   left: -34px;
-  position: absolute;
 }
 
 body {
@@ -128,13 +128,12 @@ ul {
 }
 
 li {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .colors {
   margin-top: 30px;
   margin-left: 10px;
-  cursor: default;
 }
 
 .color {
@@ -163,7 +162,7 @@ li {
 }
 
 .brown {
-  background-color: saddlebrown;
+  background-color: #572b0c;
 }
 
 .box1 {
