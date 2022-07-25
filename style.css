@@ -36,6 +36,13 @@ body {
   --3rd-color: #a1887f;
   --4th-color: #263238;
   --5th-color: #eceff1;
+
+  --blue-color: #646c9e;
+  --red-color: #df3535;
+  --yellow-color: #f3c52c;
+  --green-color: #4b9471;
+  --brown-color: #572b0c;
+
   cursor: default;
 }
 
@@ -122,7 +129,7 @@ li {
 
 .colors {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -134,23 +141,23 @@ li {
 }
 
 .blue {
-  background-color: #646c9e;
+  background-color: var(--blue-color);
 }
 
 .red {
-  background-color: #df3535;
+  background-color: var(--red-color);
 }
 
 .yellow {
-  background-color: #f3c52c;
+  background-color: var(--yellow-color);
 }
 
 .green {
-  background-color: #4b9471;
+  background-color: var(--green-color);
 }
 
 .brown {
-  background-color: #572b0c;
+  background-color: var(--brown-color);
 }
 
 .info {
@@ -164,10 +171,6 @@ li {
   display: flex;
   gap: 30px;
   justify-content: center;
-}
-
-.product-img {
-  flex: 0;
 }
 
 .box1 {
