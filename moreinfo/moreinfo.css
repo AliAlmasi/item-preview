@@ -32,16 +32,14 @@ body {
   background: var(--4th-color);
 }
 
-.border {
+.container {
   margin: 50px;
   border: 4px solid var(--4th-color);
-}
-
-.container {
   display: flex;
-  justify-content: space-around;
-  /* align-content: stretch;
-  DEFAULT -> STRETCH */
+  justify-content: center;
+  gap: 30px;
+  /* DEFAULT -> STRETCH
+  align-content: stretch; */
 }
 
 .item {
@@ -70,4 +68,5 @@ body {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
+  margin-bottom: 10px;
 }
