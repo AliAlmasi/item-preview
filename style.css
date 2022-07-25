@@ -73,7 +73,6 @@ button:hover {
 .description {
   margin-bottom: 10px;
   line-height: 1.6;
-  clear: both;
 }
 
 /* detais title */
@@ -83,18 +82,10 @@ h2 {
   margin-top: 20px;
 }
 
-.product-img {
-  width: 250px;
-  height: 250px;
-  float: left;
-  margin-right: 40px;
-}
-
 .price {
   color: var(--1st-color);
   font-size: 20px;
   margin-bottom: 10px;
-  float: left;
 }
 
 .shipping {
@@ -102,8 +93,6 @@ h2 {
   color: #777;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 4px;
-  float: right;
 }
 
 a:link,
@@ -132,16 +121,15 @@ li {
 }
 
 .colors {
-  margin-top: 30px;
-  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .color {
   background-color: #26272c;
   height: 20px;
   width: 20px;
-  display: inline-block;
-  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -165,14 +153,29 @@ li {
   background-color: #572b0c;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flexcontainer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-img {
+  flex: 0;
+}
+
 .box1 {
-  width: 243px;
-  float: left;
-  margin-right: 40px;
+  flex: 1;
   margin-top: 20px;
 }
 
 .box2 {
-  width: 243px;
-  float: left;
+  flex: 1;
+  margin-top: 10px;
 }
