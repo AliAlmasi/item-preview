@@ -109,11 +109,11 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline var(--blue-color);
 }
 
 a:active {
-  background-color: var(--2nd-color);
+  background-color: var(--blue-color);
   color: var(--5th-color);
 }
 
