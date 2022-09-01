@@ -168,17 +168,21 @@ li {
 }
 
 .flexcontainer {
+  /* FLEXBOX
   display: flex;
   gap: 30px;
-  justify-content: center;
+  justify-content: center; */
+
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
 }
 
 .box1 {
-  flex: 1;
   margin-top: 20px;
 }
 
 .box2 {
-  flex: 1;
   margin-top: 10px;
 }
